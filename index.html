@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Conveert units</h1>
+        <p>Select unit to convert from-to. More units to come (hope soon)...</p>
+    </header>
+    
+    <main>
+        <form onsubmit="return false"> <!-- fix reseting form -->
+            <input type="number" class="input-number" autofocus onkeydown="disableKey(event)">
+            <select class="convert-from">
+                <option value="kb">kb</option>
+                <option value="mb">mb</option>
+                <option value="gb">gb</option>
+                <option value="tb">tb</option>
+            </select>
+            <div id="arrow">→</div>
+            <select class="convert-to">
+                <option value="kb">kb</option>
+                <option value="mb">mb</option>
+                <option value="gb">gb</option>
+                <option value="tb">tb</option>
+            </select>
+            <button class="btn-convert">Convert</button>
+        </form>
+        <div class="result-container">
+            <p id="result">0</p>
+        </div>
+    </main>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
