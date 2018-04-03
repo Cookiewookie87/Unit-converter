@@ -15,19 +15,23 @@
     <main>
         <form onsubmit="return false"> <!-- fix reseting form -->
             <input type="number" class="input-number" autofocus onkeydown="disableKey(event)">
-            <select class="convert-from">
-                <option value="kb">kb</option>
-                <option value="mb">mb</option>
-                <option value="gb">gb</option>
-                <option value="tb">tb</option>
-            </select>
+            <div class="select-wrapper">
+                <select class="convert-from">
+                    <option value="kb">kb</option>
+                    <option value="mb">mb</option>
+                    <option value="gb">gb</option>
+                    <option value="tb">tb</option>
+                </select>
+            </div>
             <div id="arrow">→</div>
-            <select class="convert-to">
-                <option value="kb">kb</option>
-                <option value="mb">mb</option>
-                <option value="gb">gb</option>
-                <option value="tb">tb</option>
-            </select>
+            <div class="select-wrapper">
+                <select class="convert-to">
+                    <option value="kb">kb</option>
+                    <option value="mb">mb</option>
+                    <option value="gb">gb</option>
+                    <option value="tb">tb</option>
+                </select>
+            </div>
             <button class="btn-convert">Convert</button>
         </form>
         <div class="result-container">
