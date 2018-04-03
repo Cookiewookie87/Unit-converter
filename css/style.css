@@ -1,6 +1,7 @@
 :root {
     --gradient-color1: #DE6262;
     --gradient-color2: #FFB88C;
+    --base-color: #616263;
 }
 
 html{
@@ -55,7 +56,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .select-wrapper:after {
     content:"▼";
-    color: #616263;
+    color: var(--base-color);
     font-size: 15px;
     position: absolute;
     top: 15px;
@@ -77,11 +78,11 @@ select {
     width: 70px;
     font-size: 20px;
     padding-left: 10px;
-    color: #616263;
+    color: var(--base-color);
 }
 #arrow{
     font-size: 20px;
-    color: #616263;
+    color: var(--base-color);
     margin: 0 20px 0 20px;
     line-height: 46px;
     color: white;
@@ -90,7 +91,7 @@ select {
     background-color: white;
     margin-left: 10px;
     font-size: 20px;
-    color: #616263;
+    color: var(--base-color);
     cursor: pointer;
     border: none;
     transition: 0.5s;
